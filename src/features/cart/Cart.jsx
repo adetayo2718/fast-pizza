@@ -1,5 +1,4 @@
-import { Link, useNavigation } from "react-router-dom";
-import Loader from "../../ui/Loader";
+import { Link } from "react-router-dom";
 
 const fakeCart = [
   {
@@ -27,12 +26,9 @@ const fakeCart = [
 
 function Cart() {
   const cart = fakeCart;
-  const navigation = useNavigation();
-  const isLoading = navigation.state === "loading";
 
   return (
     <div>
-      {isLoading && <Loader />}
       <Link to="/menu">&larr; Back to menu</Link>
 
       <h2>Your cart, %NAME%</h2>

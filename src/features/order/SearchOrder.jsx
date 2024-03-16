@@ -10,7 +10,6 @@ function SearchOrder() {
     e.preventDefault();
     navigate(`/order/${query}`);
     setQuery("");
-    console.log(query);
   }
   return (
     <form onSubmit={handleSubmit}>
